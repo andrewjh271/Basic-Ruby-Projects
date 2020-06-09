@@ -22,13 +22,3 @@ def caesar_cipher(string, shift)
     char = char.chr
   end.join
 end
-
-puts caesar_cipher("HelLo 2@43 hI**", 4)
-puts caesar_cipher('A', 1)
-puts caesar_cipher('Aaa', 1)
-puts caesar_cipher('Hello, World!', 5)
-puts caesar_cipher('Mjqqt, Btwqi!', -5)
-puts caesar_cipher('Z', 1)
-puts caesar_cipher('Hello, World!', 75)
-puts caesar_cipher('Hello, World!', -29)
-puts caesar_cipher('0123456789:!@#$%^&*()', -4444)
