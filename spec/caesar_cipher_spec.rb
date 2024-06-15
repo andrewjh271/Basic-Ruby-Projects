@@ -1,4 +1,4 @@
-require './lib/caesar_cipher.rb'
+require './caesar_cipher/lib/caesar_cipher'
 
 describe '#caesar_cipher' do
   it 'works with a single character' do
@@ -20,7 +20,7 @@ describe '#caesar_cipher' do
     expect(caesar_cipher('Hello, World!', -55)).to eq('Ebiil, Tloia!')
   end
   it 'ignores symbols' do
-    expect(caesar_cipher("HelLo 2@43 hI**", 4)).to eq('LipPs 6@87 lM**')
+    expect(caesar_cipher('HelLo 2@43 hI**', 4)).to eq('LipPs 6@87 lM**')
   end
   it 'shifts numbers but not symbols' do
     expect(caesar_cipher('0123456789:!@#$%^&*()', -4444)).to eq('6789012345:!@#$%^&*()')
